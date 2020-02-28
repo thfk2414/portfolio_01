@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0px; margin: 0px;;
+            height: 100vh;
+            background: linear-gradient(120deg, #2c5364, #203A43, #0f2027);
+            font-family: 'Jua',sans-serif;
+        }
+        .hover_wrap{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hover_wrap figure{
+            position: relative;
+            width:400px; margin: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            background: linear-gradient(45deg, #884477, #c43a30);
+        }
+
+        .hover_wrap figure::before{
+            content:'';
+            width:60px; height: 1px; background: #fff;
+            position: absolute; left:0; top:50%; z-index: 1;
+            transform:  translate(-50%, -50%);
+        }
+
+        .hover_wrap figure::after{
+            content:'';
+            width:1px; height: 60px; background: #fff;
+            position: absolute; left:50%; top: 0; z-index: 1;
+        }
+        .hover_wrap figure img{
+            width:100%; display: block;
+        }
+
+        /* media query */
+        @media (max-width: 800px){
+            .hover_wrap{flex-direction: column;}
+        }
+
+        /* hover_wrap */
+
+        .hover_wrap .hover3 figure:hover img{ opacity: 0.6; }
+
+        .hover_wrap .hover3 figure:hover::before{left:50%;}
+        .hover_wrap .hover3 figure:hover::after{top:38%;}
+    </style>
+</head>
+<body>
+    <div class="hover_wrap">
+        <div class="effect hover3">
+            <figure class="hover1">
+                <img src="https://lh3.googleusercontent.com/proxy/xOTSKfKRkdlP1ylO5W7DP2U-pja-r4ZpyDB-AHFDge-Ys8NZ8Vc_rBcCAqn6pQP9i560NgYWO9vfqDNd8E8XHPUDSt_lInqSLLo6WlbeBFKovVws22So6UP6wwl8J72oIkQ"> 
+            </figure>
+            <figure class="hover2">
+                <img src="https://news.samsungdisplay.com/wp-content/uploads/2018/08/8.jpg">
+             </figure>    
+        </div>
+    </div>
+</body>
+</html>

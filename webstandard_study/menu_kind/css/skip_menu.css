@@ -1,0 +1,32 @@
+body{margin:0; padding:0;}
+a{color:#222; text-decoration: none;}
+a:hover{color:#390; }
+#wrap{text-align: center; text-transform: uppercase; text-align: center;}
+
+/* 전체 레이아웃 */
+header{ height: 140px; background: yellow;}
+section{ height: 950px; background: yellowgreen;}
+footer{height: 220px; background: yellow;}
+
+/* 스킵 내비게이션 */
+#skip{position: relative;}
+#skip a{position: absolute; left: 0px; top:-35px; border: 1px solid #fff;
+background: #333; line-height: 30px; width:160px; text-align: center; font-size: 15px;}
+
+/* tab을 눌렀을 경우 효과를 주기 위해서는 focus적용 */
+#skip a:active,
+#skip a:focus{top:0;} 
+
+
+
+ /* 레이 아웃 
+  - 레이아웃 가운데 정렬 */
+.content{margin: 0 auto; background: rgba(255, 0, 0, 0.24); width:1000px; height: inherit;}
+/* - 각 레이아웃 구별 */
+.header_top{height: 70px; background: green; border: 1px solid #fff;}
+.header_nav{height: 70px; background: green; border: 1px solid #fff;}
+.content_01{height: 90px; background: hotpink; border: 1px solid #fff;}
+.content_02{height: 480px; background: hotpink; border: 1px solid #fff;}
+.content_03{height: 380px; background: hotpink; border: 1px solid #fff;}
+.footer_nav{height: 60px; background: indianred; border: 1px solid #fff;}
+.footer_nav{height: 160px;background: indianred; border: 1px solid #fff;}

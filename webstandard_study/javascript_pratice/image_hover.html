@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <title>Document</title>
+    <style>
+        #wrapper {
+        width:500px;
+        height:500px;
+        background:#aed6e4;
+        }
+
+        /* 추가된 부분 */
+        #frame {
+        width:400px;
+        height:400px;
+        background:#ffffff;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+        position:relative;
+        top:50px;
+        left:50px;
+        }
+        .img-wrapper {
+        width:195px;
+        height:195px;
+        position:absolute;
+        cursor:pointer;
+        }
+
+        /* 추가된 부분 */
+        .img-wrapper img {
+        box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+        width:inherit;
+        height:inherit;
+        }
+
+        /* 추가된 부분 */
+        .img1 {
+        top:2px;
+        left:2px;
+        }
+
+        .img2 {
+        top:2px;
+        left:202px;
+        }
+
+        .img3 {
+        top:202px;
+        left:2px;
+        }
+
+        .img4 {
+        top:202px;
+        left:202px;
+        }
+        .darkness{
+            position: absolute;
+            top:0;
+            left: 0;
+            width:100%; 
+            height: 100%;
+            background: #000000;
+
+            /* 애니메이션 효과 적용 */
+            opacity:0;
+            transition: all .6s linear;
+        }
+        .btn-plus {
+        position:absolute;
+        top:70px;
+        left:70px;
+        background:red;
+        width:55px;
+        height:55px;
+        border-radius:50%;
+        text-align:center;
+
+        opacity: 0;
+        transform: scale(2);
+        transition: all .3s linear;
+        }
+
+        .btn-plus span {
+        font-size:2.3em;
+        color:#9c8181;
+        user-select:none;
+        }
+
+        .img-wrapper:hover .darkness{
+            opacity: 0.4;
+        }
+
+        .img-wrapper:hover .btn-plus{
+            opacity: 1;
+            transform:scale(1);
+        }
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+   <!-- 추가된 부분 -->
+<div id="wrapper">
+    
+    <div id="frame">
+      
+      <div class="img-wrapper img1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtfNIkGooyqsBDlQ_W4bznuExkLsWUg0xwNJgmijy-2l7wn-T"/>
+        <div class="darkness"></div>
+        <div class="btn-plus"><span draggable="false">+</span></div>
+      </div>
+        
+      <div class="img-wrapper img2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSqmRDw0NslJoX2PGpU2MqCmcq1oxNaUSgqHWQzMo9xdffAxp"/>
+        <div class="darkness"></div>
+        <div class="btn-plus"><span draggable="false">+</span></div>
+      </div>
+      
+      <div class="img-wrapper img3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9xmdTGxroxImnlyXBUcrFE-0BcjKofMscCK1Yu-NbahvMLqHLw"/>
+        <div class="darkness"></div>
+        <div class="btn-plus"><span draggable="false">+</span></div>
+      </div>
+      
+      <div class="img-wrapper img4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTK-7Grq30fWlFQ_lVEmutDHaYboppq8zJo9zepB-EivlgUzuU-g"/>
+        <div class="darkness"></div>
+        <div class="btn-plus"><span draggable="false">+</span></div>
+      </div>
+    
+    </div>
+  
+</div>
+
+</body>
+</html>

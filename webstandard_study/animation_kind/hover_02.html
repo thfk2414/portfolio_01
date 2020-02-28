@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="http://fonts.gooleapis.com/css?family-jua&display=swap" rel="stylesheet">
+    <style>
+         body{
+            padding:0px; margin: 0px;;
+            height: 100vh;
+            background: linear-gradient(120deg, #2c5364, #203A43, #0f2027);
+            font-family: 'Jua',sans-serif;
+        }
+        .hover_wrap{
+          
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+        }
+        .hover_wrap .effect{
+            position: relative;
+            padding:0px; margin: 0px;
+            width:400px; height: 350px;
+        }
+        .hover_wrap .effect img{display: block;  width:400px; height: 350px;}
+        
+        .hover_wrap .effect .front{position: absolute; left:0; top:0; z-index: 10;}
+
+        .hover_wrap .effect .back{position: absolute; left:0; top:0;}
+        .hover_wrap .effect figcaption{
+            position:absolute; bottom: 0; left: 0;
+            background: rgba(0, 0, 0, 0.5); width:400px; box-sizing: border-box;
+            color:#fff;
+        }
+        .hover_wrap .effect figcaption h3{
+            font-size: 24px; padding-bottom:5px;
+        }
+        .hover_wrap .effect figcaption p{
+            font-size: 20px; 
+        }
+        
+        
+        /* hover effect1 */
+        .hover_wrap .effect.hover7 .front{
+            transform: rotateY(0deg);
+            transition: all 1s ease;
+            backface-visibility: hidden;
+        }
+
+        .hover_wrap .effect.hover7:hover .front{
+            transform: rotateY(180deg);
+        }
+
+        .hover_wrap .effect.hover7 .back{
+            transform: rotateY(-180deg);
+            transition: all 1s ease;
+        }
+
+        .hover_wrap .effect.hover7:hover .back{
+            transform: rotateY(0deg);
+        }
+
+
+        @media (max-width:600px){
+            .hover_wrap{flex-direction: column;}
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="hover_wrap">
+        <div class="effect hover7">
+            <figure class="front">
+                <img src="https://lh3.googleusercontent.com/proxy/xOTSKfKRkdlP1ylO5W7DP2U-pja-r4ZpyDB-AHFDge-Ys8NZ8Vc_rBcCAqn6pQP9i560NgYWO9vfqDNd8E8XHPUDSt_lInqSLLo6WlbeBFKovVws22So6UP6wwl8J72oIkQ"> 
+                <figcaption>
+                    <h3>Mouse Hover</h3>
+                    <p>마우스 오버 이펙트 앞면입니다.</p>
+                </figcaption>
+            </figure>
+            <figure class="back">
+                <img src="https://news.samsungdisplay.com/wp-content/uploads/2018/08/8.jpg">
+                <figcaption>
+                    <h3>Mouse Hover</h3>
+                    <p>마우스 오버 이펙트 뒷면입니다.</p>
+                </figcaption>
+            </figure>    
+        </div>
+    </div>
+</body>
+</html>

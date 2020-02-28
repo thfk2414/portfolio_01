@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="http://fonts.gooleapis.com/css?family-jua&display=swap" rel="stylesheet">
+    <style>
+        body{
+            height: 100vh;
+            background: #0f2027;
+            background: linear-gradient(120deg, #2c5364, #203A43, #0f2027);
+            font-family: 'Jua',sans-serif;
+        }
+        .hover_wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .hover_wrap figure{
+            position: relative;
+            width:400px;
+            margin:10px;
+            cursor: pointer;
+            background: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            
+        }
+        .hover_wrap figure img{
+            display: block;
+            width:100%; 
+            transition: all 0.3 ease;   
+            border-radius: 4px;
+        }
+        .hover_wrap figure:hover img{
+            opacity: 0.1;
+        }
+        .hover_wrap figcaption{
+            position: absolute;
+            top:0; right: 0; left: 0; bottom:0;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:#fff;
+
+        }
+        .hover_wrap figcaption::before{
+            content: '';
+            width:150px; height: 150px;
+            background: #000;
+            border-radius: 50%;
+            position: absolute; left:50%; top:50%;
+            transform: translate(-50%, -50%);
+        }
+        .hover_wrap figcaption strong{
+            color:#fff;
+            z-index:20;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        /* hover effect1 */
+        .hover_wrap .hover5 figcaption  {
+            transform: translateX(80%) rotate(10deg);
+            transition: all 0.3s ease;
+        }
+        .hover_wrap .hover5:hover figcaption  {
+            transform: translateX(0%) rotate(0deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="hover_wrap">
+  <figure class="hover5">
+    <img src="https://lh3.googleusercontent.com/proxy/xOTSKfKRkdlP1ylO5W7DP2U-pja-r4ZpyDB-AHFDge-Ys8NZ8Vc_rBcCAqn6pQP9i560NgYWO9vfqDNd8E8XHPUDSt_lInqSLLo6WlbeBFKovVws22So6UP6wwl8J72oIkQ">
+    <figcaption><strong> mouse hover</strong>
+    </figcaption>
+  </figure>
+</div>
+</body>
+</html>

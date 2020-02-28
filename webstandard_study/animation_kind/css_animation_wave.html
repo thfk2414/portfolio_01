@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle{
+            width:10px; height: 10px;
+            background: #fff;
+            margin: 5px 10px;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            transform-origin: top center ;
+        }
+
+        .row{
+            display: flex;
+            flex:0.1 100%;
+
+        }
+
+        .row:nth-child(1) .circle{animation-delay: 100ms;}
+        .row:nth-child(2) .circle{animation-delay: 200ms;}
+        .row:nth-child(3) .circle{animation-delay: 300ms;}
+        .row:nth-child(4) .circle{animation-delay: 400ms;}
+        .row:nth-child(5) .circle{animation-delay: 500ms;}
+        .row:nth-child(6) .circle{animation-delay: 600ms;}
+        .row:nth-child(7) .circle{animation-delay: 700ms;}
+        .row:nth-child(8) .circle{animation-delay: 800ms;}
+        .row:nth-child(9) .circle{animation-delay: 900ms;}
+        .row:nth-child(10) .circle{animation-delay: 1000ms;}
+        
+        @keyframes spin{
+            0%{transform: rotateZ(0) scale(1.1);}
+            50%{transform: rotateZ(180deg) scale(0.9);}
+            100%{transform: rotateZ(360deg) scale(1.1);}
+        }
+
+
+
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="circles">
+        <div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div><div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div><div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div><div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div><div class="row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>

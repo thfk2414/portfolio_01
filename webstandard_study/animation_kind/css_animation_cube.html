@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #ffebee;
+            height: 100vh;
+            /* 3D로 변환하는 것에 필요한것 */
+            perspective: 1000px; 
+            /* 중 가운데로 만들기 위한 코드이다  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cube{
+            position: relative;
+            width:100px; height: 100px;
+            background: #000;
+            /* 3D로 사용할것이라고 선언한 것 */
+            transform-style: preserve-3d;
+            transform: rotateX(-40deg) rotateY(-156deg);
+            animation: rotate 8s linear infinite;
+        }
+        .cube div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:0; left: 0;
+            width:100px; height: 100px;
+            opacity: 0.75;
+            color:#fff;
+            
+        }
+        .cube div:nth-child(1){
+            background: yellow;
+            transform-origin: center top;
+            transform: rotateX(90deg) translateY(-100px);
+            animation: top 4s 8s ease-in-out infinite;
+        }
+        .cube div:nth-child(2){
+            background: yellow;
+            transform-origin: center bottom;
+            transform: rotateX(-90deg) translateY(100px);
+        }
+        .cube div:nth-child(3){
+            background: green;
+            transform-origin: left center;
+            transform: rotateY(-90deg) translateX(-100px);
+        }
+        .cube div:nth-child(4){
+            background: green;
+            transform-origin: right center;
+            transform: rotateY(90deg) translateX(100px);
+        }
+        .cube div:nth-child(5){
+            background: burlywood;
+            transform-origin: center center;
+            transform: rotateX(0deg) translateX(0px);
+        }
+        .cube div:nth-child(6){
+            background: burlywood;
+            transform-origin: center center;
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+        @keyframes rotate{
+            0%{transform: rotateX(0) rotateY(0) rotateZ(0) translateZ(0);}
+            100%{transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) translateZ(0);}
+        }
+
+        @keyframes top{
+            0%{ transform: rotateX(90deg) translateY(-100px) translateZ(0); }
+            50%{ transform: rotateZ(90deg) translateY(-100px) translateZ(100px);}
+            100%{ transform: rotateZ(90deg) translateY(-100px) translateZ(0);}
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
