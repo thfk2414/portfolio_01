@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/portfolio.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/final.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+    <header>
+        <div class="logo col-md-6"><a href="#"><img src="./images/logo_01.png"></a></div>
+        <nav class="col-md-6">
+            <ul>
+                <li class="on"><a href="#home">HOME</a></li>
+                <li><a href="#me">ME</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#protfolio">PORTFOLIO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="contents">
+          <nav class="nav_remote">
+            <a href="#home"><div class="dots dot"></div></a>
+            <a href="#me"><div class="dots "></div></a>
+            <a href="#skill"><div class="dots "></div></a>
+            <a href="#protfolio"><div class="dots "></div></a>
+          </nav>
+            <div class="section section_01" id="home">
+                <div class="content_01">
+                    sora's<br><strong>PORTFOLIO</strong>
+                </div>
+                <div class=" loading circle">
+                    <div></div>
+                </div>
+            </div>
+            
+            <div class="section section_02" id="me">
+                <div class="poto_part col-md-6">
+                    <div class="poto">
+                        <img src="images/my_poto_01.png" class="img-responsive" alt="Responsive image">
+                    </div>        
+                </div>
+                <div class="coment_part_02 col-md-6">
+                    <div>
+                        <h1>"누구나 접근이 편리하고 흥미로운 웹을 구현하고 싶은"</h1>
+                        <p>이름: 정소라</p>
+                        <p>지원 분야: 웹퍼블릭셔 & 프론트 엔트</p>
+                        <p>이메일: thfk2414@naver.com</p>
+                    </div>
+                    <div class="more more_click">
+                        <p>나란 여자 더 알아보기 </p>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div class="section section_03" id="skill">
+                <div class="container">
+                    <div class="bar_part">
+                        <h1>SKILL</h1>
+                        <div class=" progressBar">
+                            <div class="title htmlColor">HTML5</div>
+                            <div class="progress html"></div>
+                            <div class="progress_value">90%</div>
+                        </div>
+                        <div class=" progressBar">
+                            <div class="title cssColor">CSS3</div>
+                            <div class="progress css"></div>
+                            <div class="progress_value">80%</div>
+                        </div>
+                        <div class=" progressBar">
+                            <div class="title jsColor">JavaScript</div>
+                            <div class="progress js"></div>
+                            <div class="progress_value">75%</div>
+                        </div>
+                        <div class=" progressBar">
+                            <div class="title bootstrapColor">bootstrap</div>
+                            <div class="progress bootstrap"></div>
+                            <div class="progress_value">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section section_04" id="protfolio">
+              <h1>portfolio</h1>
+              <div id="slide_wrap">
+                <div id="slide_01" class="slide">
+                  <div class="img_part"><img src="images/violetlove.png"></div>
+                  <div class="coment_part">
+                    <h1>violetlove</h1>
+                    <div class="coment">
+                      <strong>설명</strong>
+                      <p>연인들의 사랑을 기록할 다이어리</p>
+                      <p>연인들이 각자의 일상이야기나 서로에게 칭찬해주고 싶은것들을 공유할 수 있으며
+                          또한 다른 연인들에게도 자신들의 일상을 공유할 수 있도록 구현해보려고 노력하였다.</p>
+                      <strong>역할</strong>
+                      <p>웹 디자인 및 프론트 엔드 역할을 하였습니다.
+                          처음으로 배웟던 html, css, js, jsp, servelet을 mvc패턴으로 2주간 하나의 웹을 만들어 보도록 
+                          노력하였습니다. </p> 
+                    </div> 
+                    <div class="header_icon">
+                      <ul>
+                          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                          <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>view</span></a></li>
+                      </ul>
+                  </div>    
+                  </div>            
+                </div>
+                <div id="slide_02" class="slide">
+                  <div class="img_part"><img src="images/oliveyoung.PNG"></div>
+                  <div class="coment_part">
+                    <h1>oliveyoung</h1>
+                    <div class="coment">
+                      <strong>설명</strong>
+                    <p>html뼈대와 css의 기법을 좀더 심층적으로 구현하기위해 올리브영 사이트로 정하였다.</p>
+                    </div>
+                    <div class="header_icon">
+                      <ul>
+                          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                          <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>view</span></a></li>
+                      </ul>
+                  </div>    
+                  </div> 
+                </div>
+                <div id="slide_03" class="slide">
+                  <div class="img_part"><img src="images/fourth.PNG"></div>
+                  <div class="coment_part">
+                    <h1>bgf</h1>
+                    <div class="coment">
+                      <strong>설명</strong>
+                    <p>html+css+js중에서 js를 다양하게 구현할 수 있는 사이트를 찾다가 bgf사이트를 찾게 되었다.
+                        quikmenu구현, animation구현, scroll에따른 반응을 구현하는것에 중점을 두고 코딩을 하였으며
+                        지속적으로 노력하였고 현재는 어느정도 구현할 수 있을 정도로 익숙해졌다.
+                    </p>  
+                    </div>
+                    <div class="header_icon">
+                      <ul>
+                          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                          <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>view</span></a></li>
+                      </ul>
+                  </div>  
+                  </div>     
+                </div>
+                <div id="slide_04" class="slide"> 
+                  <div class="img_part"><img src="images/achoo.png"></div>
+                  <div class="coment_part">
+                    <h1>achoo</h1>
+                    <div class="coment">
+                      <strong>설명</strong>
+                    <p>퍼스널 컬러를 진단해주는 어플</p>
+                    <p>자신의 아름다움을 한층 더 업그레이드 시키기 위해서는 자신에게 어떤 색이 잘 어울리는지 파악하는 것은
+                        아주 중요한 일이다. 그러나 퍼스널컬러의 진단비용은 너무 비싸다.
+                        <br>저희는 이 어플을 통해서 자신과 어울리는 색을 자가진단 + 상세진단을 하여 좀 더 자신과 어울리는 색을
+                        찾을 수 있도록 도와줄 수 있는 어플을 제작하였다.
+                    </p>
+                    <strong>역할</strong>
+                    <p>팀내에서 저는 앱의 전반적인 디자인과 ui를 책임을 졌으며 자가진단의 알고리즘을 만들었습니다.     
+                    </p>
+                    </div>
+                    <div class="header_icon">
+                      <ul>
+                          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                          <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>view</span></a></li>
+                      </ul>
+                  </div>    
+                  </div>   
+                </div>
+              <div class="prev"><div class="button">&#10094;</div></div>
+              <div class="next"><div class="button">&#10095;</div></div>
+              </div>
+              <section> 
+                <div id="popup_mask"></div>
+                <div id="popupDiv">
+                    <div id="popCloseBtn"><img class="close_img" src="images/close.png"></div>
+                    <div class="external">
+                        <div class="horizontal_scroll_wrapper">
+                            
+                            <div class="img_wrapper slower">
+                                <div class="about_me_topic" >
+                                    학력 
+                                </div>
+                                <a href="" target="_blank" rel="noopener">
+                                <img src="images/school.jpg" alt=""> 
+                                <div class="about_me" >
+                                    부산외국어대학교 졸업(2015.03 ~ 2019.08)
+                                </div>
+                               </a>
+                            </div>
+                            <div class="img_wrapper faster">
+                                <a href="" target="_blank" rel="noopener">
+                                    <img src="images/india.jpg" alt="">
+                                    <div class="about_me">
+                                        주 전공 - 인도학부(인도 지역통상)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper slower vertical">
+                                <a href="" target="_blank" rel="noopener">
+                                    <img src="images/computer.jpg" alt="">
+                                    <div class="about_me">
+                                        복수 전공 - 컴퓨터 공학
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper slower slower_down">
+                                <a href="" target="_blank" rel="noopener">
+                                    <img src="images/done.jpg" alt="">
+                                    <div class="about_me" >
+                                        비트 고급과정 수료
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper">
+                                <a href="" target="_blank" rel="noopener">
+                                    <img src="images/book_img.jpg" alt="">
+                                    <div class="about_me" >
+                                        자격증 - 정보처리기사 및 GAIQ 
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper slower">
+                                <div class="about_me_topic" >
+                                    팀 프로젝트 및 느낌점들
+                                </div>
+                                <a href="https://altphotos.com/photo/paris-waterfront-at-sunset-1555/" target="_blank" rel="noopener">
+                                    <img src="./images/violetlove.png" alt="">
+                                    <div class="about_me" >
+                                        violeelove (디자인부터 기능까지 구현)<br>
+                                        팀원과의 배려와 협력
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper faster1">
+                                <a href="https://altphotos.com/photo/old-man-leaning-over-the-barrier-looking-at-the-river-265/" target="_blank" rel="noopener">
+                                    <img src="images/ebiga.PNG" alt="">
+                                    <div class="about_me" >
+                                        ebiga_짬뽕 (웹 크롤링)<br>
+                                        의사소통의 중요성
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper">
+                                <a href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/" target="_blank" rel="noopener">
+                                    <img src="./images/achoo.png" alt="">
+                                    <div class="about_me" >
+                                       achoo(android 앱 ui 및 기능 구현)<br>
+                                       유저의 접근성과 편리의 중요성<br>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper">
+                                <div class="about_me_topic" >
+                                   나의 성격
+                                </div>
+                                <a href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/" target="_blank" rel="noopener">
+                                    <img src="images/climbing-.jpg" alt="">
+                                    <div class="about_me" >
+                                        거북이 근성
+                                     </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper">
+                                <a href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/" target="_blank" rel="noopener">
+                                    <img src="images/hilling.png" alt="">
+                                    <div class="about_me" >
+                                        i make you a comfort
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper slower">
+                                <div class="about_me_topic" style="color:#ff445f" >
+                                    앞으로 나의 목표
+                                 </div>
+                                <a href=" " target="_blank" rel="noopener">
+                                    <img src="./images/hard_working.png" alt="">
+                                    <div class="about_me" >
+                                         모든 일에 최선을 다하고
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper faster1">
+                                <a href=" " target="_blank" rel="noopener">
+                                    <img src="./images/cooperation.jpg" alt="">
+                                    <div class="about_me" >
+                                        팀원들과 서로 협력하며
+                                   </div>
+                                </a>
+                                
+                            </div>
+                            <div class="img_wrapper slower slower2">
+                                <a href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/" target="_blank" rel="noopener">
+                                    <img src="images/laugh.jpg" alt="">
+                                    <div class="about_me" >
+                                        분위기가 밝은 사람인 동시에
+                                   </div>
+                                </a>
+                               
+                            </div>
+                            <div class="img_wrapper">
+                                <a href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/" target="_blank" rel="noopener">
+                                    <img src="images/coding.jpg" alt="" >
+                                    <div class="about_me" >
+                                        코딩도 잘 하는<br> 웹 퍼블리셔 및 프론트 엔드가 될 것입니다.
+                                   </div>
+                                </a>
+                            </div>
+                            <div class="img_wrapper slower" style="visibility: hidden">
+                                <a href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/" target="_blank" rel="noopener">
+                                    <img src="images/cooperation.jpg" alt="">
+                                </a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+           </div>
+    </section>
+</body>
+</html>
