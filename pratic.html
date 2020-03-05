@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+  background: #efecdb;
+  color: #5D4037;
+}
+a{text-decoration: none;
+}
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+  height:1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.external {
+  overflow: hidden; box-sizing: border-box;
+  height: 100vh;
+}
+        .horizontal_scroll_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vh; 
+            transform: rotate(-90deg) translate3d(0,-100vh,0);
+            transform-origin: right top;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 0;
+            height: 100vw;
+            perspective:300px;
+            transform-style: preserve-3d;
+            padding-bottom: 10rem;
+        }
+        .img_wrapper{
+            transform: rotate(90deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            transform-origin: 50% 50%;
+            transform:rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+            transition:1s;
+        }
+
+        /* 각 사진의 거리를 부여한다 */
+        .slower{
+            transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+        }
+        .slower1{
+            transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
+        }
+        .slower2{
+            transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+        }
+        .slower_down{
+            transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh);
+        }
+        .faster{
+            transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh);
+        }
+        .faster1{
+            transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh);
+        }
+        .fastest {
+            transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh) ;
+        }
+        .vertical {
+            transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%) ;
+        }
+        .last {
+            transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
+        }
+
+        .img_wrapper a{
+            overflow: hidden;
+            display: block;
+            padding: 1vh;
+            background: #fff;
+            box-shadow: 0 10px 50px #5f2f1182;
+
+        }
+
+        .img_wrapper .about_me_topic{
+            color:#000;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            opacity: 0;
+        }
+        
+        .img_wrapper:hover .about_me_topic{
+            opacity: 1;
+        }  
+
+        .img_wrapper .about_me{
+            padding:10px;
+            color:#5D4037; font-size: 15px;
+            text-align: center;
+        }
+
+        
+        .img_wrapper:hover{
+            min-height: 70vh;
+        }
+
+        img {
+            max-width: 50vh;
+            max-height: 55vh;
+            transition: .5s;
+            vertical-align: top;
+            filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+        }
+        a:hover img {
+             filter: none;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="external">
+        <div class="horizontal_scroll_wrapper">
+            
+            <div class="img_wrapper slower">
+                <div class="about_me_topic" >
+                    학력 
+                </div>
+                <a href="" target="_blank" rel="noopener">
+                <img src="images/school.jpg" alt=""> 
+                <div class="about_me" >
+                    부산외국어대학교 졸업(2015.03 ~ 2019.08)
+                </div>
+               </a>
+            </div>
+            <div class="img_wrapper faster">
+                <a href="" target="_blank" rel="noopener">
+                    <img src="images/india.jpg" alt="">
+                    <div class="about_me">
+                        주 전공 - 인도학부(인도 지역통상)
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper slower vertical">
+                <a href="" target="_blank" rel="noopener">
+                    <img src="images/computer.jpg" alt="">
+                    <div class="about_me">
+                        복수 전공 - 컴퓨터 공학
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper slower slower_down">
+                <a href="" target="_blank" rel="noopener">
+                    <img src="images/done.jpg" alt="">
+                    <div class="about_me" >
+                        비트 고급과정 수료
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper">
+                <a href="" target="_blank" rel="noopener">
+                    <img src="images/book_img.jpg" alt="">
+                    <div class="about_me" >
+                        자격증 - 정보처리기사 및 GAIQ 
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper slower">
+                <div class="about_me_topic" >
+                    팀 프로젝트 및 느낌점들
+                </div>
+                <a href="https://altphotos.com/photo/paris-waterfront-at-sunset-1555/" target="_blank" rel="noopener">
+                    <img src="./images/violetlove.png" alt="">
+                    <div class="about_me" >
+                        violeelove (디자인부터 기능까지 구현)<br>
+                        팀원과의 배려와 협력
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper faster1">
+                <a href="https://altphotos.com/photo/old-man-leaning-over-the-barrier-looking-at-the-river-265/" target="_blank" rel="noopener">
+                    <img src="images/ebiga.PNG" alt="">
+                    <div class="about_me" >
+                        ebiga_짬뽕 (웹 크롤링)<br>
+                        의사소통의 중요성
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper">
+                <a href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/" target="_blank" rel="noopener">
+                    <img src="./images/achoo.png" alt="">
+                    <div class="about_me" >
+                       achoo(android 앱 ui 및 기능 구현)<br>
+                       유저의 접근성과 편리의 중요성<br>
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper">
+                <div class="about_me_topic" >
+                   나의 성격
+                </div>
+                <a href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/" target="_blank" rel="noopener">
+                    <img src="images/climbing-.jpg" alt="">
+                    <div class="about_me" >
+                        거북이 근성
+                     </div>
+                </a>
+            </div>
+            <div class="img_wrapper">
+                <a href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/" target="_blank" rel="noopener">
+                    <img src="images/hilling.png" alt="">
+                    <div class="about_me" >
+                        i make you a comfort
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper slower">
+                <div class="about_me_topic" style="color:#ff445f" >
+                    앞으로 나의 목표
+                 </div>
+                <a href=" " target="_blank" rel="noopener">
+                    <img src="./images/hard_working.png" alt="">
+                    <div class="about_me" >
+                         모든 일에 최선을 다하고
+                    </div>
+                </a>
+            </div>
+            <div class="img_wrapper faster1">
+                <a href=" " target="_blank" rel="noopener">
+                    <img src="./images/cooperation.jpg" alt="">
+                    <div class="about_me" >
+                        팀원들과 서로 협력하며
+                   </div>
+                </a>
+                
+            </div>
+            <div class="img_wrapper slower slower2">
+                <a href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/" target="_blank" rel="noopener">
+                    <img src="images/laugh.jpg" alt="">
+                    <div class="about_me" >
+                        분위기가 밝은 사람인 동시에
+                   </div>
+                </a>
+               
+            </div>
+            <div class="img_wrapper">
+                <a href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/" target="_blank" rel="noopener">
+                    <img src="images/coding.jpg" alt="" >
+                    <div class="about_me" >
+                        코딩도 잘 하는<br> 웹 퍼블리셔 및 프론트 엔드가 될 것입니다.
+                   </div>
+                </a>
+            </div>
+            <div class="img_wrapper slower" style="visibility: hidden">
+                <a href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/" target="_blank" rel="noopener">
+                    <img src="images/cooperation.jpg" alt="">
+                </a>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
