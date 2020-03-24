@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dominopizza</title>
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/dominoPizza.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+      <script src="./js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+      </script>
+   <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="header_top">
+                <div class="container">
+                    <div class="header_logo"><a href="#"> <img src="./images/domino/logo.gif"></a></div>
+                    <div class="header_location"><a href="#"><span><img src="./images/domino/location_img.png"></span>주변 매장의 프로모션을 확인해보세요!</a></div>
+                    <div class="header_myinfo">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">e-쿠폰</a></li>
+                        <li><a href="#">상품권선물</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">매장검색</a></li>
+                    </ul>
+                     <div class="more_wrap">
+                   <span> 더보기<img src="./images/domino/cursor.PNG"></span></div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="more_container">
+            <div class="more_inner">
+                <div class="container">
+                    <div class="more_in_01">
+                        <div class="mone_in">
+                            <ul>
+                                <li class="topic">도미노 서비스</li>
+                                <li><a href="#">매니야 혜택</a></li>
+                                <li><a href="#">도미노 모멘트</a></li>
+                                <li><a href="#">퀵 오더</a></li>
+                                <li><a href="#">단체주문 서비스</a></li>
+                            </ul>
+                        </div>
+                        <div class="mone_in">
+                            <ul>
+                                <li class="topic">고객센터</li>
+                                <li><a href="#">자주하는 질문</a></li>
+                                <li><a href="#">온라인 신문고</a></li>
+                            </ul>
+                        </div>
+                        <div class="mone_in">
+                            <ul>
+                                <li class="topic">회사소개</li>
+                                <li><a href="#">한국도미노피자</a></li>
+                                <li><a href="#">광고갤러리</a></li>
+                                <li><a href="#">사회공헌활동</a></li>
+                                <li><a href="#">가맹점모집</a></li>
+                                <li><a href="#">인재채용</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="more_in_02">
+                        <div class="more_in">
+                            <ul>
+                                <li class="topic">공지사항</li>
+                                <li><a href="#">- 도미노뉴스</a></li>
+                                <li><a href="#">- 보도자료</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article class="banner">
+            <div class="banner_wrap">
+                <input type="radio" name="image" id="i1" checked>
+                <input type="radio" name="image" id="i2">
+                <input type="radio" name="image" id="i3">
+                <input type="radio" name="image" id="i4">
+                <input type="radio" name="image" id="i5">
+                <input type="radio" name="image" id="i6">
+                <input type="radio" name="image" id="i7">
+    
+                <div class="slide_img" id="one">
+                    <img src="./images/domino/slide_01.PNG">
+                    <label for="i7" class="pre"><strong>&#10094;</strong></label>
+                    <label for="i2" class="next"><strong>&#10095;</strong></label>
+                    <label class="text">1/7</label>
+                    
+                </div>
+        
+                <div class="slide_img" id="two">
+                    <img src="./images/domino/slide_02.PNG">
+                    <label for="i1" class="pre"><strong>&#10094;</strong></label>
+                    <label for="i3" class="next"><strong>&#10095;</strong></label>
+                    <label class="text">2/7</label>
+                </div>
+        
+                <div class="slide_img" id="three">
+                    <img src="./images/domino/slide_03.PNG">
+                    <label for="i2" class="pre"><strong>&#10094;</strong></label>
+                    <label for="i4" class="next"><strong>&#10095;</strong></label>
+                    <label class="text">3/7</label>
+                </div>
+                <div class="slide_img" id="four">
+                    <img src="./images/domino/slide_04.PNG">
+                    <label for="i3" class="pre"><strong>&#10094;</strong></label>
+                    <label for="i5" class="next"><strong>&#10095;</strong></label>
+                    <label class="text">4/7</label>
+                </div>
+        
+                <div class="slide_img" id="five">
+                    <img src="./images/domino/slide_05.PNG">
+                    <label for="i4" class="pre"><strong>&#10094;</strong></label>
+                    <label for="i6" class="next"><strong>&#10095;</strong></label>
+                    <label class="text">5/7</label>
+                </div>
+        
+                <div class="slide_img" id="six">
+                    <img src="./images/domino/slide_06.PNG">
+                    <label for="i5" class="pre"><strong>&#10094;</strong></label>
+                    <label for="i7" class="next"><strong>&#10095;</strong></label>
+                    <label class="text">6/7</label>
+                </div>
+
+                <div class="slide_img" id="seven">
+                    <img src="./images/domino/slide_07.PNG">
+                    <label for="i6" class="pre"><strong>&#10094;</strong></label>
+                    <label for="i1" class="next"><strong>&#10095;</strong></label>
+                    <label class="text">7/7</label>
+                </div>
+
+            </div>
+        </article>
+        <article class="order">
+            <div class="container">
+                <div class="order_inner_01">
+                    <div class="order_item order_item_01">
+                        <a href="#">
+                            <img src="./images/domino/delivery.PNG">
+                            <span>배달 주문 <div class="span_button">&#10095;</div> </span></a>
+                            <p>등급별 최대 30%</p>
+                    </div>
+                    <div class="order_item order_item_02">
+                        <a href="#">
+                            <img src="./images/domino/store.PNG">
+                            <span>포장 주문 <div class="span_button">&#10095;</div> </span></a>
+                            <p>등급별 최대 40%</p>
+                    </div>
+                </div>
+                <div class="order_inner_02">
+                    <div class="order_item order_item_03">
+                        <a href="#">
+                            <img src="./images/domino/order.PNG">
+                            <span>도미챗 주문 <div class="span_button">&#10095;</div> </span></a>
+                            <p>빠르고 간편한 채팅 주문 서비스</p>
+                    </div>
+                    <div class="order_item order_item_04">
+                        <a href="#">
+                            <img src="./images/domino/quick_order.PNG">
+                            <span>퀵 오더 <div class="span_button">&#10095;</div> </span></a>
+                            <p>자주 이용하는 메뉴를<br>더 빠르게 주문해보세요</p>
+                    </div>
+                    
+                    <div class="order_item order_item_05">
+                        <a href="#">
+                            <img src="./images/domino/driving.PNG">
+                            <span>드라이빙 픽업주문 <div class="span_button">&#10095;</div> </span></a>
+                            <p>고객님의 차로 직접<br>피자를 가져다 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <article class="myinfo">
+            <div class="container">
+                <div class="myinfo_wrap">
+                    <div class="myinfo_p">
+                        <p>도미노피자의<br><strong>특별한 매니아 혜택</strong><br>누려보세요</p>
+                        <div class="myinfo_btn">로그인</div> 
+                    </div>
+                    <div class="myinfo_banner">
+                        <div class="banner_img"><a href="#"><img src="https://cdn.dominos.co.kr/domino/pc/images/main/main_card1.png"></a></div>
+                        <div class="banner_img"><a href="#"><img src="https://cdn.dominos.co.kr/domino/pc/images/main/main_card2.gif"></a></div>
+                        <div class="banner_img"><a href="#"><img src="https://cdn.dominos.co.kr/domino/pc/images/main/main_card4-3.png"></a></div>
+                        <div class="banner_img"><a href="#"><img src="https://cdn.dominos.co.kr/domino/pc/images/main/main_card3.png"></a></div>
+                        <div class="banner_img"><a href="#"><img src="https://cdn.dominos.co.kr/domino/pc/images/main/main_card5.png"></a></div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="last_menu">
+            <div class="container">
+                <div class="last_menu_wrap">
+                    <div class="lastest_menu_inner">
+                        <article>
+                            <div class="lastest_menu_img"><img src="./images/domino/lastest_banner_01.PNG"></div>
+                            <div class="lastest_menu_cont"><strong>30치즈&뉴욕스트립스테이크출시</strong><br>도미노피자30주년 스페셜</div>
+                        </article>
+                        <article>
+                            <div class="lastest_menu_img"><img src="./images/domino/lastest_banner_02.PNG"></div>
+                            <div class="lastest_menu_cont"><strong>하프&하프,두 가지 맛을 동시에!</strong><br>도미노가 추천하는 베스트조합</div>
+                        </article>
+                        <article>
+                            <div class="lastest_menu_img"><img src="./images/domino/lastest_banner_03.PNG"></div>
+                            <div class="lastest_menu_cont"><strong>도미노 드라이빙 픽업 서비스</strong><br>미리 주문하고 차에서 바로 받자</div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="footer_wrap_info">
+            <div class="container">
+                <div class="info_inner_wrap">
+                    <div class="info_inner">
+                        <img src="./images/domino/logo.PNG"><span>1577-3082</span>
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">가맹점모집</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                        <p>06229 서울특별시 강남구 언주로 315 청오디피케이㈜｜대표이사 : 오광현</p>
+                        <p>사업자 등록번호: 220-81-03371｜통신판매업신고: 강남 5064호｜개인정보 보호책임자 : 이명윤</p>
+                        <p>문의 : webmaster@dominos.co.kr</p>
+                        <p>Copyright ⓒ Domino’s Pizza. All rights reserved.</p>
+                        <p>청오디피케이㈜의 사전 서면동의 없이 도미노피자 사이트(PC, 모바일, 앱)의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.</p>
+                    </div>
+                    <div class="info_inner_02">
+                        <div class="select_wrap">
+                            <select>
+                                <option>KOR</option>
+                                <option>ENG</option>
+                            </select>
+                        </div>
+                        <dl class="app_box">
+                            <dt>DOWNLOAD APP</dt>
+                            <dd>
+                                <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </dd>
+                        </dl>
+                        <div class="sns_items">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_award_info">
+            <div class="container">
+                <div class="award_info">
+                    <ul>
+                        <li>
+                            <div class="award_list">
+                                <img src="https://cdn.dominos.co.kr/domino/pc/images/list_awards.png" alt="">
+                                <p>식품안전<br>경영시스템인증</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="award_list">
+                                <img src="https://cdn.dominos.co.kr/domino/pc/images/list_awards2.png" alt="">
+                                <p>지식경제부<br>우수디자인선정</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="award_list list_awards">
+                                <img src="https://cdn.dominos.co.kr/domino/pc/images/list_awards3.png" alt="">
+                                <p>고객이가장추천하는기업<br>피자전문점부문7년연속1위</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="award_list list_awards">
+                                <img src="https://cdn.dominos.co.kr/domino/pc/images/list_awards4.png" alt="">
+                                <p>2019년한국산업고객만족도<br>피자전문점부문5년연속1위</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="award_list list_awards_01">
+                                <img src="https://cdn.dominos.co.kr/domino/pc/images/list_awards5.png" alt="">
+                                <p>2019프리미엄브랜드지수<br>피자전문점부문4년연속1위수상</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="award_list list_awards_02">
+                                <img src="https://cdn.dominos.co.kr/domino/pc/images/list_awards6.png" alt="">
+                                <p>대학생1000명이선택한<br>2019년 올해의 핫블랜드캠퍼스잡앤조이선정</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+    </footer>
+    <script src="js/dominoPizza.js"></script>
+</body>
+</html>
